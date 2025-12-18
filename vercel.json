@@ -1,0 +1,41 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "out",
+  "framework": "nextjs",
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/login",
+      "destination": "https://app.coiep.com/login",
+      "permanent": false
+    },
+    {
+      "source": "/dashboard",
+      "destination": "https://app.coiep.com/dashboard",
+      "permanent": false
+    },
+    {
+      "source": "/request-access",
+      "destination": "https://app.coiep.com/request-access",
+      "permanent": false
+    }
+  ]
+}

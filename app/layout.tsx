@@ -6,6 +6,10 @@ export const metadata: Metadata = {
   description: 'Transforming IEP Development Through Collaboration. CoIEP empowers educators to create high-quality, compliant Individualized Education Programs through intelligent AI collaboration.',
   keywords: ['IEP', 'Individualized Education Program', 'Special Education', 'PLAAFP', 'Education Technology', 'AI Education'],
   authors: [{ name: 'CoIEP' }],
+  robots: {
+    index: false,
+    follow: false,
+  },
   openGraph: {
     title: 'CoIEP - Collaborative IEP Platform',
     description: 'Transforming IEP Development Through Collaboration',

@@ -82,6 +82,13 @@ export default function Home() {
           <HStack spacing={4}>
             <Button
               as="a"
+              href="/developers"
+              variant="ghost"
+            >
+              Developers
+            </Button>
+            <Button
+              as="a"
               href={`${APP_URL}/login`}
               variant="ghost"
             >
